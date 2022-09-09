@@ -11,16 +11,19 @@ body {
 h1 {
     font-size: 4rem;
     line-height: 1;
+    margin-bottom: 20px;
+
 }
 
 h2 {
     font-size: 3.5rem;
-    line-height: 2;
+    line-height: 1;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-size: 2.8rem;
-    line-height: 1.2;
+    line-height: 1;
 }
 
 h4 {
@@ -68,6 +71,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: white;
+    width: 100vw;
     box-shadow: 0px -3px 13px #d3d3d3;
 }
 
@@ -128,7 +132,6 @@ section#become-dev {
 section#become-dev h1 {
     color: white;
     text-shadow: 0px 2px #000;
-    padding-block: 30px;
 }
 
 section#become-dev p {
@@ -159,7 +162,7 @@ section#why-dev {
 }
 
 #why-dev_box .box {
-    width: 400px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     margin: 2vw;
@@ -346,7 +349,7 @@ footer {
 }
 
 #email {
-    width: 98%;
+    width: 90%;
     height: 60px;
     font-size: 2rem;
 }
@@ -355,7 +358,7 @@ footer {
     background: linear-gradient(90deg, #6cc1e2, #392f7a);
     font-size: 1.9rem;
     color: white;
-    width: 100%;
+    width: 93%;
     padding: 15px 30px;
     cursor: pointer;
 }
@@ -377,8 +380,8 @@ footer {
     }
 
     #footer-box div {
-        width: 100%;
-        margin-block: 10px;
+        width: 80%;
+        margin: 0 auto;
     }
 
     #you-will-be {
@@ -423,12 +426,65 @@ footer {
         font-size: 15px;
     }
 
+    table thead tr th {
+        padding: 10px;
+    }
+
     table tbody tr td {
         padding: 10px;
     }
 
     #footer-box {
         margin: 10px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    #become-dev_text {
+        word-break: break-all;
+    }
+
+    nav img {
+        width: inherit;
+        padding-block: 10px;
+    }
+
+    .fa-ellipsis {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+
+
+    table {
+        font-size: 10px;
+    }
+
+    table tbody tr td {
+        padding: 0px;
+    }
+
+    table tbody tr td {
+        padding: 3px;
     }
 
 }
