@@ -365,7 +365,7 @@ footer {
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1080px) {
 
 
     #why-dev_box {
@@ -390,7 +390,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 864px) {
 
     nav {
         justify-content: space-between;
@@ -440,7 +440,7 @@ footer {
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
     #become-dev_text {
         word-break: break-all;
     }
