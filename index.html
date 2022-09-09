@@ -5,14 +5,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Epicode School: il punto di partenza per la tua professione di Developer">
+  <script src="https://kit.fontawesome.com/199573f819.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/stile.css">
   <title>Epicode - Formazione Web Developer</title>  
 </head>
 
 <body>
+    <header>
+      <nav>
+        <a href="./index.html"><img src="./assets/images/logo.png" alt="Logo Epicode"></a>
+        <a href="./layout.html"><i class="fa-solid fa-ellipsis"></i></a>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./chi-siamo.html">Chi siamo</a></li>
+          <li><a href="./contatti.html">Contatti</a></li>
+          <li><a href="./layout.html">Registrati</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="become-dev">
+        <div id="become-dev_text">
+          <h1>Diventa un developer EPICO</h1>
+          <p>Diventa un developer EPICO e ti troviamo noi il avoro. Scommettiamo su di te: paghi metà corso, l'altra metà solo quando inizi a lavorare.</p>
+          <button><a href="./contatti.html">Chiedi info</a></button>
+        </div>
+      </section>
 
+      <section id="why-dev">
+        <div id="why-dev_text">
+          <h2>Perchè diventare un Developer?</h2>
+          <p>Non servono laurea e competenze specifiche, solo impegno. <br>
+            Segui il corso oline, dove vuoi tu. <br>
+          Il lavoro che andrai a fare è veramente figo.</p>
+        </div>
+        <div id="why-dev_box">
+          <div class="box">
+            <i class="far fa-comment-dots"></i>
+            <h3>Tutti ti cercheranno</h3>
+            <p>Sono 30.000 in Italia le posizione di developer scoperte, scegli quella che ti stimola di più</p>
+          </div>
+          <div class="box">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Potrai lavorare dove vuoi</h3>
+            <p>Non serve lavorare in ufficio per essere creatori di prodotti digitali, e le aziende lo sanno. Lavora da casa, in riva al mare o in montagna.</p>
+          </div>
+          <div class="box">
+            <i class="far fa-user-circle"></i>
+            <h3>Azienda, Freelance o Startup</h3>
+            <p>Scegli più facilmente la carriera e il rapporto di lavoro che ti piace di più, in qualsiasi momento.</p>
+          </div>
+        </div>
+      </section>
 
+      <section id="who-is-dev">
+          <h1>Ma chi è il Developer oggi?</h1>
+          <p>Se non lo sai te lo diciamo noi: il futuro è devei developer</p>
+          <button><a href="./contatti.html">Scrivici</a></button>
+      </section>
+
+      <section id="you-will-be">
+        <div><img src="./assets/images/notebook.jpg" alt="Notebook"></div>
+        <div id="you-will-be_text">
+          <div class="text">
+            <h3><i class="fa-regular fa-face-laugh"></i> Chi sarai</h3>
+            <p>Il creator delle app che usi tutti i giorni</p>
+          </div>
+          <div class="text">
+            <h3><i class="fa-regular fa-face-grin-hearts"></i> Chi diventerai</h3>
+            <p>Lo specialista padrone del suo tempo e spazio</p>
+          </div>
+          <div class="text">
+            <h3><i class="fa-regular fa-face-meh"></i> Chi non sarai</h3>
+            <p>Il nerd incollato allo schermo</p>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer-box">
+        <div id="chi-siamo">
+          <h5>Chi Siamo</h5> <br>
+          <p>Epicode School nasce con l'obbiettivo di rivoluzionare la formazione in ambito tech.</p>
+        </div>
+        <div id="share">
+          <h5>Ti piace cio che vedi? Condividilo con i tuoi amici!</h5> <br>
+          <i class="fa-brands fa-square-facebook"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-square-instagram"></i>
+        </div>
+        <div id="newsletter"><h5>Iscriviti alla nostra newsletter</h5>
+          <form action="email">
+            <input type="email" id="email"> <br>
+            <input type="button" value="Va bene!" id="button" onclick="alert('Ti sei iscritto alla newsletter!')">
+          </form>
+        </div>
+      </div>
+      <p>© 2021 Epicode Web Developer scgool - Via Apppia 1, 00100 Roma (RM) - Tel. 06-12345678</p>
+    </footer>
 </body>
 
 </html>

@@ -1,9 +1,434 @@
 /* IMPOSTAZIONI GENERALI */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    color: #000;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 3.5rem;
+    line-height: 2;
+}
+
+h3 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+}
+
+h4 {
+    font-size: 2.3rem;
+}
+
+h5 {
+    font-size: 1.9rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+i {
+    color: #e42424;
+    text-align: center;
+    font-size: 3rem;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+
+button {
+    background: linear-gradient(90deg, #6cc1e2, #392f7a);
+    font-size: 1.9rem;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
 
 /* HEADER */
 
+.fa-ellipsis {
+    display: none;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px -3px 13px #d3d3d3;
+}
+
+nav img {
+    width: 200px;
+    padding: 27px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    min-width: 100px;
+    white-space: nowrap;
+}
+
+nav ul li a {
+    color: gray;
+    padding: 15px;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(90deg, #6cc1e2, #392f7a);
+    color: white;
+}
+
+nav ul li:nth-child(4) a {
+    background: linear-gradient(90deg, #6cc1e2, #392f7a);
+    color: white;
+    padding: 15px;
+}
+
+
 /* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN - become-dev */
+
+section#become-dev {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 505px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#become-dev h1 {
+    color: white;
+    text-shadow: 0px 2px #000;
+    padding-block: 30px;
+}
+
+section#become-dev p {
+    color: white;
+    text-shadow: 0px 2px #000;
+}
+
+#become-dev_text {
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* MAIN - why-dev*/
+
+section#why-dev {
+    min-height: 700px;
+    padding-block: 50px;
+}
+
+#why-dev_text {
+    text-align: center;
+}
+
+#why-dev_box {
+    display: flex;
+    max-width: 80%;
+    margin-inline: auto;
+}
+
+#why-dev_box .box {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+}
+
+#why-dev_box .box h3 {
+    text-align: center;
+}
+
+/* MAIN - who-is-dev*/
+
+section#who-is-dev {
+    background-color: #0c0633;
+    width: 100%;
+    min-height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* MAIN - you-will-be*/
+
+section#you-will-be {
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#you-will-be div img {
+    max-width: 600px;
+    width: 80vw;
+}
+
+#you-will-be_text .text {
+    margin: 40px;
+}
+
+
+/* MAIN - Chi siamo.html */
+
+
+
+section#we-are-coder {
+    text-align: center;
+    width: 90%;
+    max-width: 1700px;
+}
+
+section#we-are-coder h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+section#we-are-coder p {
+    margin-bottom: 30px;
+}
+
+#we-are-coder_box {
+    display: flex;
+    justify-content: center;
+}
+
+#we-are-coder_box div {
+    margin-inline: 20px;
+}
+
+#we-are-coder_box img {
+    width: 100%;
+}
+
+#we-are-coder_box div {
+    max-width: 700px;
+}
+
+/* Chi siamo -> table */
+
+#table {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    margin: 50px;
+    text-align: center;
+    max-width: 1200px;
+    width: 90%;
+}
+
+table thead th {
+    color: white;
+    background-color: #5F82A3;
+    padding: 30px;
+}
+
+table thead th:nth-child(1) {
+    width: 20%;
+}
+
+table tbody tr td {
+    padding: 30px;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #d2dce7;
+}
+
+
+/* MAIN - Contatti */
+
+section#contact {
+    text-align: center;
+    margin-block: 80px;
+}
+
+#box-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 20px;
+}
+
+#box-contact div {
+    width: 50%;
+    margin-inline: 30px;
+}
+
+#box-contact #form-contact input {
+    width: 100%;
+    height: 50px;
+    margin-block: 10px;
+    font-size: 20px;
+}
+
+#box-contact #form-contact textarea {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 100%;
+    height: 100px;
+}
+
+#box-contact #address-contact {
+    width: 30%;
+    margin-inline: auto;
+
+}
+
+
+/* MAIN - Registrati*/
+
+section#page-not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 550px);
+}
+
 
 /* FOOTER */
 
+
+footer {
+    background-color: rgb(238, 238, 238);
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-box {
+    display: flex;
+    margin: 50px;
+}
+
+#footer-box div {
+    max-width: 500px;
+    width: 30%;
+    margin: 0 20px;
+}
+
+#email {
+    width: 98%;
+    height: 60px;
+    font-size: 2rem;
+}
+
+#button {
+    background: linear-gradient(90deg, #6cc1e2, #392f7a);
+    font-size: 1.9rem;
+    color: white;
+    width: 100%;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
 /* RESPONSIVE */
+
+@media screen and (max-width: 1050px) {
+
+
+    #why-dev_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer-box div {
+        width: 100%;
+        margin-block: 10px;
+    }
+
+    #you-will-be {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .fa-ellipsis {
+        display: inline;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    #box-contact {
+        flex-direction: column;
+
+    }
+
+    #box-contact div {
+        width: inherit;
+        margin-block: 20px;
+    }
+
+    #we-are-coder_box {
+        flex-direction: column;
+    }
+
+    #box-contact #address-contact {
+        width: inherit;
+    }
+
+    table {
+        font-size: 15px;
+    }
+
+    table tbody tr td {
+        padding: 10px;
+    }
+
+    #footer-box {
+        margin: 10px;
+    }
+
+}

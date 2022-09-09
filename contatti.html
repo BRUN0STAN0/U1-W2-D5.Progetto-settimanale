@@ -4,15 +4,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="">
+  <meta name="description" content="Epicode School: contattaci per i corsi di Front End Developer.">
+  <script src="https://kit.fontawesome.com/199573f819.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./assets/css/reset.css">
   <link rel="stylesheet" href="./assets/css/stile.css">
   <title></title>  
 </head>
 
 <body>
+  <header>
+    <nav>
+      <a href="./index.html"><img src="./assets/images/logo.png" alt="Logo Epicode"></a>
+      <a href="./layout.html"><i class="fa-solid fa-ellipsis"></i></a>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./chi-siamo.html">Chi siamo</a></li>
+        <li><a href="./contatti.html">Contatti</a></li>
+        <li><a href="./layout.html">Registrati</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <section id="contact">
+      <h1>Contatti</h1>
+      <div id="box-contact">
+        <div id="form-contact">
+          <input type="text" name="Nome e Cognome" placeholder=" Nome e cognome">
+          <input type="email" name="email" placeholder=" Indirizzo valido: nome@casella.com">
+          <textarea name="messaggio" placeholder="Scrivi in breve il tuo messaggio"></textarea>
+          <button>Invia il messaggio</button>
+        </div>
+        <div id="address-contact">
+          <h3>Sede formativa</h3>
+          <p> Via Appia 1 <br>
+          00100 Roma (RM) <br>
+          <br>
+          info@epicode.school <br>
+          +39 0612345956</p>
+          <h3>Lavora con noi</h3>
+          <p>Per poterti candidare ad un ruolo da docente invia il tuo cv a</p>
+          <p>job@epicode.school</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer>
+    <div id="footer-box">
+      <div id="chi-siamo">
+        <h5>Chi Siamo</h5> <br>
+        <p>Epicode School nasce con l'obbiettivo di rivoluzionare la formazione in ambito tech.</p>
+      </div>
+      <div id="share">
+        <h5>Ti piace cio che vedi? Condividilo con i tuoi amici!</h5> <br><i class="fa-brands fa-square-facebook"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-square-instagram"></i>
+      </div>
+      <div id="newsletter"><h5>Iscriviti alla nostra newsletter</h5>
+        <form action="email">
+      <input type="email" id="email"> <br>
+      <input type="button" value="Va bene!" id="button" onclick="alert('Ti sei iscritto alla newsletter!')">
+    </form>
+      </div>
+    </div>
+    <p>© 2021 Epicode Web Developer scgool - Via Apppia 1, 00100 Roma (RM) - Tel. 06-12345678</p>
+  </footer>
 </body>
 
 </html>
